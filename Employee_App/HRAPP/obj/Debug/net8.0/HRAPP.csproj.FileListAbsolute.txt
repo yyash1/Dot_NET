@@ -26,3 +26,4 @@ D:\GITHub\Dot_NET\Employee_App\HRAPP\obj\Debug\net8.0\refint\HRAPP.dll
 D:\GITHub\Dot_NET\Employee_App\HRAPP\obj\Debug\net8.0\HRAPP.pdb
 D:\GITHub\Dot_NET\Employee_App\HRAPP\obj\Debug\net8.0\HRAPP.genruntimeconfig.cache
 D:\GITHub\Dot_NET\Employee_App\HRAPP\obj\Debug\net8.0\ref\HRAPP.dll
+D:\GITHub\Dot_NET\Employee_App\HRAPP\obj\Debug\net8.0\HRAPP.sourcelink.json
