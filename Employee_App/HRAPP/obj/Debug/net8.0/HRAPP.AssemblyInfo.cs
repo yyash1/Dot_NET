@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HRAPP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5132aa2c4b91dbe01b6a3905721cb3b22ba670a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b6f291f56958298445d5cd32b400fda4dc5ca7e")]
 [assembly: System.Reflection.AssemblyProductAttribute("HRAPP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HRAPP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
