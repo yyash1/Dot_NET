@@ -6,6 +6,8 @@ public class EmployeeService:IEmployeeService{
       List<Employee> employees=new List<Employee>();
       RepositoryManager mgr=new RepositoryManager();
     public List<Employee> GetAll(){
+       List<Employee> employees=new List<Employee>();
+       RepositoryManager mgr=new RepositoryManager();
        string fileName=@"D:\GITHub\Dot_NET\Employee_App\employees.json";
        employees=mgr.DeSerialize(fileName);
        return employees;
