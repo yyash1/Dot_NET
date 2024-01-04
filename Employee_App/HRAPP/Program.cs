@@ -54,6 +54,9 @@ Console.WriteLine("\n1.Add Employee \n2.Get All Emp List \n3.Find emp by ID \n4.
         case 6:
         flag=true;
         break;
+        default:
+        Console.WriteLine("Invalid Option Selected");
+        break;
     }
 
 }

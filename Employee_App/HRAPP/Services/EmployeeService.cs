@@ -3,20 +3,14 @@ using HRAPP.Repositories;
 namespace HRAPP.Services;
 
 public class EmployeeService:IEmployeeService{
+      List<Employee> employees=new List<Employee>();
+      RepositoryManager mgr=new RepositoryManager();
     public List<Employee> GetAll(){
-       List<Employee> employees=new List<Employee>();
-       /*employees.Add(new Employee{Id=1, Name="Shivam"});
-       employees.Add(new Employee{Id=2, Name="Chirag"});
-       employees.Add(new Employee{Id=1, Name="Manisha"});
-       employees.Add(new Employee{Id=1, Name="shailesh"});*/
-       RepositoryManager mgr=new RepositoryManager();
        string fileName=@"D:\GITHub\Dot_NET\Employee_App\employees.json";
        employees=mgr.DeSerialize(fileName);
        return employees;
     }
     public Employee? GetById(int id){
-      List<Employee> employees=new List<Employee>();
-       RepositoryManager mgr=new RepositoryManager();
        string fileName=@"D:\GITHub\Dot_NET\Employee_App\employees.json";
        employees=mgr.DeSerialize(fileName);
        foreach(Employee emp in employees){
@@ -27,8 +21,6 @@ public class EmployeeService:IEmployeeService{
          return null;
     }
     public void Insert(Employee emp){
-       List<Employee> employees=new List<Employee>();
-       RepositoryManager mgr=new RepositoryManager();
        string fileName=@"D:\GITHub\Dot_NET\Employee_App\employees.json";
        employees=mgr.DeSerialize(fileName);
        employees.Add(emp);
@@ -36,8 +28,6 @@ public class EmployeeService:IEmployeeService{
     }
      public void Update(Employee emp){}
      public void Delete(int id){
-       List<Employee> employees=new List<Employee>();
-       RepositoryManager mgr=new RepositoryManager();
        string fileName=@"D:\GITHub\Dot_NET\Employee_App\employees.json";
        employees=mgr.DeSerialize(fileName);
        Employee em =employees.Find(s=>s.Id==id);
@@ -45,7 +35,6 @@ public class EmployeeService:IEmployeeService{
        mgr.Serialize(employees,fileName);
      }
       public void UpdateList(List<Employee> list){
-       RepositoryManager mgr=new RepositoryManager();
        string fileName=@"D:\GITHub\Dot_NET\Employee_App\employees.json";
        mgr.Serialize(list,fileName);
       }
